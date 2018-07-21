@@ -1,3 +1,5 @@
+//曲データは_________.mp3のところに好きな曲（mp3の型）を入れてください。
+
 import ddf.minim.analysis.*;
 import ddf.minim.*;
 
@@ -17,7 +19,7 @@ void setup()
 
   minim = new Minim(this);
 
-  audio = minim.loadFile("チルドレンレコード.mp3", 512);
+  audio = minim.loadFile("_________.mp3", 512);
 
   fft = new FFT(audio.bufferSize(), audio.sampleRate());
   audio.loop();
